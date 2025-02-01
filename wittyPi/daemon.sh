@@ -22,9 +22,6 @@ log 'Witty Pi daemon (v2.67) is started.'
 pi_model=$(cat /proc/device-tree/model)
 log "Running on $pi_model"
 
-# log wiringPi version number
-wp_ver=$(gpio -v | sed -n '1 s/.*\([0-9]\+\.[0-9]\+\).*/\1/p')
-log "Wiring Pi version: $wp_ver"
 
 # check 1-wire confliction
 if one_wire_confliction ; then

@@ -4,6 +4,9 @@
 # This script provides some useful utility functions
 #
 
+# GPIO utilites
+. "$cur_dir/gpio-util.sh"
+
 # halt by GPIO-4 (BCM naming)
 HALT_PIN=4
 
